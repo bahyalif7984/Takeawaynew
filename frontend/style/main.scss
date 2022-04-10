@@ -10,6 +10,9 @@ body{
     width: 100%;
     height: 100%;
     
+    background: no-repeat;
+    background-size: cover;
+    background-image:url('/frontend/gambar/b.webp') ;
 }
 html{
     overflow: hidden;
@@ -179,6 +182,7 @@ height: 100vh;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
     align-items: center;
     height: 100vh;
   .brand{
