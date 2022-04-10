@@ -1,0 +1,1126 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  overflow: hidden;
+  font-size: 60%;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+.intro {
+  background-color: #00a000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro .selamatdatang {
+  -webkit-animation: 2s text ease forwards;
+          animation: 2s text ease forwards;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+@-webkit-keyframes text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#logo {
+  -webkit-animation: lines 0.5s ease forwards 3.9s;
+          animation: lines 0.5s ease forwards 3.9s;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 394;
+  stroke-dashoffset: 394;
+  -webkit-animation: line 2s ease forwards 3s;
+          animation: line 2s ease forwards 3s;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 629;
+  stroke-dashoffset: 629;
+  -webkit-animation: line 2s ease forwards 2.4s;
+          animation: line 2s ease forwards 2.4s;
+}
+
+#logo path:nth-child(3) {
+  stroke-dasharray: 629;
+  stroke-dashoffset: 629;
+  -webkit-animation: line 2s ease forwards 2.1s;
+          animation: line 2s ease forwards 2.1s;
+}
+
+#logo path:nth-child(4) {
+  stroke-dasharray: 629;
+  stroke-dashoffset: 629;
+  -webkit-animation: line 2s ease forwards 1.7s;
+          animation: line 2s ease forwards 1.7s;
+}
+
+#logo path:nth-child(5) {
+  stroke-dasharray: 629;
+  stroke-dashoffset: 629;
+  -webkit-animation: line 2s ease forwards 1.3s;
+          animation: line 2s ease forwards 1.3s;
+}
+
+#logo path:nth-child(6) {
+  stroke-dasharray: 629;
+  stroke-dashoffset: 629;
+  -webkit-animation: line 2s ease forwards 0.5s;
+          animation: line 2s ease forwards 0.5s;
+}
+
+#logo path:nth-child(7) {
+  stroke-dasharray: 629;
+  stroke-dashoffset: 629;
+  -webkit-animation: line 2s ease forwards 2.7s;
+          animation: line 2s ease forwards 2.7s;
+}
+
+#logo path:nth-child(8) {
+  stroke-dasharray: 629;
+  stroke-dashoffset: 629;
+  -webkit-animation: line 2s ease forwards 0.9s;
+          animation: line 2s ease forwards 0.9s;
+}
+
+@-webkit-keyframes line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes lines {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ffffff;
+  }
+}
+
+@keyframes lines {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ffffff;
+  }
+}
+
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.intro {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.logo-brand.fade {
+  bottom: 150px;
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.logo-brand.active {
+  bottom: 0;
+  opacity: 1;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.intro {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@font-face {
+  font-family: eastman;
+  src: url(../font/Eastman-Condensed-Black-trial.otf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: cream;
+  src: url(../font/Cream-Cake.otf);
+  font-weight: 900;
+}
+
+.judul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.judul .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.judul .brand .take {
+  font-size: 120px;
+  font-family: eastman;
+  margin: 10px;
+  word-spacing: 20px;
+  letter-spacing: -5px;
+  font-weight: bolder;
+}
+
+.judul .brand .take1 {
+  font-size: 120px;
+  font-family: eastman;
+  margin: 10px;
+  color: #00a000;
+  word-spacing: 20px;
+  letter-spacing: -5px;
+  font-weight: bolder;
+}
+
+.judul .list-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.judul .list-button button {
+  margin: 10px;
+  position: relative;
+}
+
+.judul .list-button .tokped {
+  border: none;
+  cursor: pointer;
+  width: 500px;
+  height: 80px;
+  position: relative;
+  background-color: #00a000;
+}
+
+.judul .list-button .tokped i {
+  width: 50px;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.judul .list-button .tokped h1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.judul .list-button .tokped:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#00a000), to(#0dd10d));
+  background: linear-gradient(to right, #00a000 0%, #0dd10d 100%);
+}
+
+.judul .list-button .shopee {
+  border: none;
+  cursor: pointer;
+  width: 500px;
+  height: 80px;
+  position: relative;
+  background-color: #f9a41c;
+}
+
+.judul .list-button .shopee img {
+  width: 50px;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+}
+
+.judul .list-button .shopee h1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.judul .list-button .shopee:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#f9a41c), to(#f48c03));
+  background: linear-gradient(to right, #f9a41c 0%, #f48c03 100%);
+}
+
+.judul .list-button .instagram {
+  border: none;
+  cursor: pointer;
+  width: 500px;
+  height: 80px;
+  position: relative;
+  background: #f09433;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.judul .list-button .instagram i {
+  width: 50px;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.judul .list-button .instagram h1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.judul .list-button .instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 80%, #cc2366 100%, #bc1888 100%);
+}
+
+.judul .list-button .wa {
+  border: none;
+  cursor: pointer;
+  width: 500px;
+  height: 80px;
+  position: relative;
+  background-color: #00a000;
+}
+
+.judul .list-button .wa i {
+  width: 50px;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.judul .list-button .wa h1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.judul .list-button .wa:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#00a000), to(#0dd10d));
+  background: linear-gradient(to right, #00a000 0%, #0dd10d 100%);
+}
+
+:root {
+  --marquee-width: 100vw;
+  --marquee-height: 100px;
+  /* --marquee-elements: 12; */
+  /* defined with JavaScript */
+  --marquee-elements-displayed: 4;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  background-color: #00a000;
+  color: #eee;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0%;
+}
+
+.marquee:before, .marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+}
+
+.marquee:before {
+  left: 0;
+}
+
+.marquee:after {
+  right: 0;
+}
+
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: scrolling var(--marquee-animation-duration) linear infinite;
+          animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+
+/* .marquee-content:hover {
+    animation-play-state: paused;
+  } */
+@-webkit-keyframes scrolling {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+            transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+  }
+}
+@keyframes scrolling {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+            transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+  }
+}
+
+.marquee-content li h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* text-align: center; */
+  font-family: cream;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  margin: auto;
+  font-size: 8rem;
+  /* 5rem; */
+  white-space: nowrap;
+}
+
+@media (max-width: 1870px) {
+  html {
+    overflow-x: hidden;
+    font-size: 50%;
+  }
+  .marquee-content li h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* text-align: center; */
+    font-family: cream;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 7rem;
+    /* 5rem; */
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1380px) {
+  html {
+    overflow-x: hidden;
+    font-size: 50%;
+  }
+  .marquee-content li h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* text-align: center; */
+    font-family: cream;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 5.8rem;
+    /* 5rem; */
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1060px) {
+  html {
+    overflow-x: hidden;
+    font-size: 40%;
+  }
+  .marquee-content li h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* text-align: center; */
+    font-family: cream;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 5.8rem;
+    /* 5rem; */
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 900px) {
+  .intro {
+    background-color: #00a000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .intro .selamatdatang {
+    -webkit-animation: 2s text ease forwards;
+            animation: 2s text ease forwards;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+  .intro .selamatdatang .ucapan {
+    width: 400px;
+    margin-bottom: -25px;
+  }
+  .intro .logo .logo-brand {
+    width: 400px;
+  }
+  html {
+    overflow-x: hidden;
+    font-size: 35%;
+  }
+  .marquee {
+    width: var(--marquee-width);
+    height: 90px;
+    background-color: #00a000;
+    color: #eee;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0%;
+  }
+  .marquee-content li h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* text-align: center; */
+    font-family: cream;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 10%;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 5.9rem;
+    /* 5rem; */
+    white-space: nowrap;
+  }
+  .judul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .judul .brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .judul .brand .take {
+    font-size: 120px;
+    font-family: eastman;
+    margin: 10px;
+    word-spacing: 20px;
+    letter-spacing: -5px;
+    font-weight: bolder;
+  }
+  .judul .brand .take1 {
+    font-size: 120px;
+    font-family: eastman;
+    margin: 10px;
+    color: #00a000;
+    word-spacing: 20px;
+    letter-spacing: -5px;
+    font-weight: bolder;
+  }
+  .judul .list-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .judul .list-button button {
+    margin: 10px;
+    position: relative;
+  }
+  .judul .list-button .tokped {
+    border: none;
+    cursor: pointer;
+    width: 500px;
+    height: 80px;
+    position: relative;
+    background-color: #00a000;
+  }
+  .judul .list-button .tokped i {
+    width: 50px;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    color: #ffffff;
+    font-size: 50px;
+  }
+  .judul .list-button .tokped h1 {
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .judul .list-button .tokped:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#00a000), to(#0dd10d));
+    background: linear-gradient(to right, #00a000 0%, #0dd10d 100%);
+  }
+  .judul .list-button .shopee {
+    border: none;
+    cursor: pointer;
+    width: 500px;
+    height: 80px;
+    position: relative;
+    background-color: #f9a41c;
+  }
+  .judul .list-button .shopee img {
+    width: 50px;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+  }
+  .judul .list-button .shopee h1 {
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .judul .list-button .shopee:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#f9a41c), to(#f48c03));
+    background: linear-gradient(to right, #f9a41c 0%, #f48c03 100%);
+  }
+  .judul .list-button .instagram {
+    border: none;
+    cursor: pointer;
+    width: 500px;
+    height: 80px;
+    position: relative;
+    background: #f09433;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  .judul .list-button .instagram i {
+    width: 50px;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    color: #ffffff;
+    font-size: 50px;
+  }
+  .judul .list-button .instagram h1 {
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .judul .list-button .instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 80%, #cc2366 100%, #bc1888 100%);
+  }
+  .judul .list-button .wa {
+    border: none;
+    cursor: pointer;
+    width: 500px;
+    height: 80px;
+    margin-bottom: 100px;
+    position: relative;
+    background-color: #00a000;
+  }
+  .judul .list-button .wa i {
+    width: 50px;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    color: #ffffff;
+    font-size: 50px;
+  }
+  .judul .list-button .wa h1 {
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .judul .list-button .wa:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#00a000), to(#0dd10d));
+    background: linear-gradient(to right, #00a000 0%, #0dd10d 100%);
+  }
+}
+
+@media (min-width: 500px) and (max-width: 780px) {
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 100px;
+    /* --marquee-elements: 12; */
+    /* defined with JavaScript */
+    --marquee-elements-displayed: 3;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  }
+  html {
+    overflow-x: hidden;
+    font-size: 28%;
+  }
+  .marquee {
+    width: var(--marquee-width);
+    height: 90px;
+    background-color: #00a000;
+    color: #eee;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0%;
+  }
+  .marquee-content li h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* text-align: center; */
+    font-family: cream;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 10%;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 7.3rem;
+    /* 5rem; */
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 550px) {
+  .intro {
+    background-color: #00a000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .intro .selamatdatang {
+    -webkit-animation: 2s text ease forwards;
+            animation: 2s text ease forwards;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+  .intro .selamatdatang .ucapan {
+    width: 200px;
+    margin-bottom: -40px;
+  }
+  .intro .logo .logo-brand {
+    width: 200px;
+  }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 100px;
+    /* --marquee-elements: 12; */
+    /* defined with JavaScript */
+    --marquee-elements-displayed: 2;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  }
+  html {
+    overflow-x: hidden;
+    font-size: 20%;
+  }
+  .marquee {
+    width: var(--marquee-width);
+    height: 50px;
+    background-color: #00a000;
+    color: #eee;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0%;
+  }
+  .marquee-content li h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* text-align: center; */
+    font-family: cream;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 10%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 8.5rem;
+    /* 5rem; */
+    white-space: nowrap;
+  }
+  .judul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .judul .brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .judul .brand .take {
+    font-size: 60px;
+    font-family: eastman;
+    margin: 10px;
+    word-spacing: 20px;
+    letter-spacing: -5px;
+    font-weight: bolder;
+  }
+  .judul .brand .take1 {
+    font-size: 60px;
+    font-family: eastman;
+    margin: 10px;
+    color: #00a000;
+    word-spacing: 20px;
+    letter-spacing: -5px;
+    font-weight: bolder;
+  }
+  .judul .list-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .judul .list-button button {
+    margin: 10px;
+    position: relative;
+  }
+  .judul .list-button .tokped {
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    background-color: #00a000;
+  }
+  .judul .list-button .tokped i {
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    color: #ffffff;
+    font-size: 25px;
+  }
+  .judul .list-button .tokped h1 {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .judul .list-button .tokped:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#00a000), to(#0dd10d));
+    background: linear-gradient(to right, #00a000 0%, #0dd10d 100%);
+  }
+  .judul .list-button .shopee {
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    background-color: #f9a41c;
+  }
+  .judul .list-button .shopee img {
+    width: 25px;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+  }
+  .judul .list-button .shopee h1 {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .judul .list-button .shopee:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#f9a41c), to(#f48c03));
+    background: linear-gradient(to right, #f9a41c 0%, #f48c03 100%);
+  }
+  .judul .list-button .instagram {
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    background: #f09433;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  .judul .list-button .instagram i {
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    color: #ffffff;
+    font-size: 25px;
+  }
+  .judul .list-button .instagram h1 {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .judul .list-button .instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 80%, #cc2366 100%, #bc1888 100%);
+  }
+  .judul .list-button .wa {
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    margin-bottom: 50px;
+    background-color: #00a000;
+  }
+  .judul .list-button .wa i {
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    color: #ffffff;
+    font-size: 25px;
+  }
+  .judul .list-button .wa h1 {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .judul .list-button .wa:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#00a000), to(#0dd10d));
+    background: linear-gradient(to right, #00a000 0%, #0dd10d 100%);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 350px) and (max-width: 850px) {
+  .judul {
+    overflow: scroll;
+  }
+  .judul .brand {
+    padding-top: 60em;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1000px) and (max-width: 1024px) {
+  .judul {
+    overflow: scroll;
+  }
+  .judul .list-button {
+    margin-bottom: 10rem;
+  }
+  .marquee {
+    height: 50px;
+  }
+  .marquee ul li h1 {
+    font-size: 5rem;
+    margin: auto 0;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 300px) {
+  .judul {
+    overflow: scroll;
+  }
+  .judul .list-button {
+    margin-bottom: 10rem;
+  }
+  .marquee {
+    height: 50px;
+  }
+  .marquee ul li h1 {
+    font-size: 7rem;
+    margin: auto auto;
+    margin-top: 15%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
